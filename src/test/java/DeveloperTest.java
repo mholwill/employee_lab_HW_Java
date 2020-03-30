@@ -20,6 +20,12 @@ public class DeveloperTest {
     }
 
     @Test
+    public void canChangeName(){
+        developer.setName("Fraser");
+        assertEquals("Fraser", developer.getName());
+    }
+
+    @Test
     public void hasNINumber(){
         assertEquals("HG234567B", developer.getNiNumber());
     }
